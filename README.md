@@ -15,7 +15,7 @@ Using **Ansible**, **OpenSCAP**, and **DISA STIG** standards, this pipeline auto
 ## 🔄 The 5-Stage Pipeline Workflow
 This repository utilizes a modular approach to security, broken down into five distinct phases to demonstrate the **Build -> Audit -> Fix -> Verify** lifecycle.
 
-### 1. Provision (`provision_webserver.yml`)
+### 1. Create Playbook on control node (`provision_webserver.yml`)
 * **Goal:** Establish the "Before" state.
 * Installs Apache (`httpd`), configures the firewall to allow traffic, and creates a "Proof of Life" test page.
 * *Result:* A functional but insecure web server ready for baseline scanning.
